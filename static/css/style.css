@@ -1,3 +1,12 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 :root {
   font-family: "Avenir";
   --mainRed: #ff0000;
@@ -8,34 +17,41 @@
   margin: 0;
 }
 
+h2 {
+  color: var(--mainRed);
+}
+
 #start {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1em;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 1rem;
+  gap: 1rem;
 }
 
 #start button {
   background-color: var(--mainBlack);
   color: var(--mainWhite);
+  padding: 0.5rem;
   border: none;
   cursor: pointer;
+
 }
 
 /* Obassistent image */
-div{
-    display: flex;
-    justify-content: center;
-}
-img {
-  width: 100vw;
-  max-width: 50%;
+div {
+  display: flex;
+  justify-content: center;
 }
 
-/* Chat styling */
-section#content {
+img {
+  width: 100vw;
+
+}
+
+.styleContent {
   width: 20rem;
   height: 30rem;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgb(0 100 200 / 41%);
   backdrop-filter: blur(1rem);
   border-radius: 0.5em;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -43,7 +59,10 @@ section#content {
   flex-direction: column;
   align-items: center;
   padding: 1em;
+  margin: 3rem auto;
 }
+
+/* Chat styling */
 
 section#content form {
   margin: 0 0 1rem 0;
@@ -61,11 +80,12 @@ section#content form input[type="text"] {
   padding: 15px 25px;
 }
 
-section#content form > button {
+section#content form>button {
   height: 50px;
   width: 50px;
   flex-shrink: 0;
-  background: #29b0a8;
+  background: #0064c8;
+  color: #fff;
   border: none;
   border-radius: 50%;
   display: flex;
@@ -89,7 +109,7 @@ section#content ul {
   overflow-y: scroll;
 }
 
-section#content ul > li {
+section#content ul>li {
   color: black;
   background: #f5f7fb;
   border-radius: 0 25px 25px 25px;
@@ -101,8 +121,8 @@ section#content h1 {
   color: var(--mainRed);
 }
 
-section#content h1 > span{
-    transform: rotateZ(269deg);
+section#content h1>span {
+  transform: rotateZ(269deg);
 }
 
 .chat {
@@ -115,4 +135,33 @@ section#content h1 > span{
 
 #btnCategories {
   display: none;
+}
+
+section#titelLogo {
+  display: flex;
+}
+
+section#titelLogo>h2:nth-last-of-type(2) {
+  transform: rotate(-90deg);
+}
+
+
+/*********************/
+/* WEBSITE MODE */
+/*********************/
+@media (min-width: 40em) {
+  #start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  #start button {
+    min-width: 30rem;
+  }
+
+  img {
+    width: 20%;
+  }
 }

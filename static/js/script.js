@@ -1,11 +1,9 @@
-
-let btnCategorie = document.getElementById("container-categorie")
 let btnVraag = document.getElementById("toggleVraag");
-
-// Zoek het content-element in de HTML
+let btnCategorie = document.getElementById("container-categorie");
 let content = document.getElementById("content");
 let contentCategorie = document.getElementById("btnCategories");
 let openzinOba = document.getElementById("vraagOba");
+
 
 // Voeg een eventlistener toe aan de toggleButton
 btnVraag.addEventListener("click", function() {
