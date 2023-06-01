@@ -1,1 +1,1 @@
-# laagdrempelig-zoeken
+# laagdrempelig-zoeken prototype

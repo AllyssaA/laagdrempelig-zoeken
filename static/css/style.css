@@ -1,0 +1,118 @@
+:root {
+  font-family: "Avenir";
+  --mainRed: #ff0000;
+  --mainWhite: #ffff;
+  --mainBlack: #000000;
+  --mainGrey: #969696;
+  padding: 0;
+  margin: 0;
+}
+
+#start {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+#start button {
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  border: none;
+  cursor: pointer;
+}
+
+/* Obassistent image */
+div{
+    display: flex;
+    justify-content: center;
+}
+img {
+  width: 100vw;
+  max-width: 50%;
+}
+
+/* Chat styling */
+section#content {
+  width: 20rem;
+  height: 30rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(1rem);
+  border-radius: 0.5em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+section#content form {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  width: 18rem;
+  height: 2rem;
+  display: flex;
+}
+
+section#content form input[type="text"] {
+  background: #f5f7fb;
+  border: none;
+  border-radius: 25px;
+  width: 90%;
+  padding: 15px 25px;
+}
+
+section#content form > button {
+  height: 50px;
+  width: 50px;
+  flex-shrink: 0;
+  background: #29b0a8;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+section#content li {
+  background-color: rgba(255, 105, 180, 0.242);
+  border-radius: 1em;
+  margin: 1em;
+}
+
+section#content ul {
+  margin: 0;
+  padding: 0.2em;
+  list-style-type: none;
+  flex-grow: 2;
+  width: 18em;
+  overflow-y: scroll;
+}
+
+section#content ul > li {
+  color: black;
+  background: #f5f7fb;
+  border-radius: 0 25px 25px 25px;
+  width: 75%;
+  padding: 10px 25px;
+}
+
+section#content h1 {
+  color: var(--mainRed);
+}
+
+section#content h1 > span{
+    transform: rotateZ(269deg);
+}
+
+.chat {
+  display: none;
+}
+
+#content {
+  display: none;
+}
+
+#btnCategories {
+  display: none;
+}

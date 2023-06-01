@@ -1,0 +1,34 @@
+<%- include('partials/head'); %>
+<!-- <h1>Waarmee kunnen we je helpen?</h1> -->
+<div>
+  <img src="/assets/helpZoeken.png" />
+</div>
+<section id="start">
+  <button id="container-categorie">Kies een categorie</button>
+  <button id="toggleVraag">Stel een vraag</button>
+</section>
+<!-- chat -->
+<section id="content">
+  <h1>OB<span>A</span>ssistent</h1>
+  <ul>
+    <li id="btnCategories">
+      Welkom bij de OBA. Ik ben de OBAassistant! Kies een categorie:
+      <button type="submit">Activiteiten</button>
+      <button type="submit">Boeken</button>
+      <button type="submit">Cursus</button>
+      <button type="submit">DvD's</button>
+      <button type="submit">Stadsarchief</button>
+      <button type="submit">Overheid/Gemeente informatie</button>
+    </li>
+    <li id="vraagOba">
+      Welkom bij de OBA. Ik ben de OBAassistant! Waarmee kan ik je helpen?
+    </li>
+  </ul>
+  <span class="fallback"></span>
+  <form action="" id="formChat">
+    <input type="text" autocomplete="off" />
+    <button><span>Send</span></button>
+  </form>
+</section>
+
+<%- include('partials/footer'); %>
